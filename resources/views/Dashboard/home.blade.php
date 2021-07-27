@@ -1,4 +1,6 @@
 @extends('Dashboard.layout');
 @section('content')
-    content
+    {{-- content --}}
+
+
 @endsection
