@@ -15,8 +15,8 @@ class CreateProjectTable extends Migration
     {
         Schema::create('project', function (Blueprint $table) {
             $table->id();
-            $table->string('project name');
-            $table->integer('building number');
+            $table->string('projectname');
+            $table->integer('buildingnumber',null);
             $table->string('coordinates',10);
             $table->string('the owner of real estate');
             $table->string('Commissioner');
@@ -27,8 +27,8 @@ class CreateProjectTable extends Migration
             $table->string('Supervising engineer');
             $table->string('Project type');
             $table->string('Project status');
-            $table->date('starting date');
-            $table->date('Expiry date');
+            $table->text('starting date');
+            $table->text('Expiry date');
             $table->integer('Budget by days');
             $table->string('the currency');
             $table->string('Notes');

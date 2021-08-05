@@ -931,11 +931,13 @@
                                             </g>
                                         </svg>
                                         <!--end::Svg Icon-->
+
                                     </span>
                                     <span class="menu-text">Pages</span>
                                     <i class="menu-arrow"></i>
                                 </a>
                                 <div class="menu-submenu">
+
                                     <i class="menu-arrow"></i>
                                     <ul class="menu-subnav">
                                         <li class="menu-item menu-item-parent" aria-haspopup="true">
@@ -7439,6 +7441,11 @@
             $function() {
 
                 $('.datepicker').datepicker();
+                $('.date-picker').datepicker({
+                    format: 'yy/mm/dd',
+                    autoclose: true,
+                    todayHighlight: true
+                });
             }
         </script>
         <!--end::Page Scripts-->
