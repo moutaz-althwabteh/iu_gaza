@@ -31,6 +31,10 @@
     <link href="assets/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
     <!--end::Layout Themes-->
     <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    {{-- datatable --}}
+    @yield('css')
+
+
 
 </head>
 
@@ -4442,6 +4446,7 @@
                                     </div>
                                 </div>
                                 <!--end::Toggle-->
+
                                 <!--begin::Dropdown-->
                                 <div
                                     class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
@@ -4497,7 +4502,9 @@
                                         <!--end::Scroll-->
                                     </div>
                                 </div>
+
                                 <!--end::Dropdown-->
+
                             </div>
                             <!--end::Search-->
                             <!--begin::Notifications-->
@@ -5441,6 +5448,8 @@
                             <!--begin::Dashboard-->
                             <!--begin::Row-->
                             @yield('create')
+                            @yield('show')
+
                             <!--end::Row-->
                             <!--begin::Row-->
 
@@ -7450,6 +7459,10 @@
         </script>
         <!--end::Page Scripts-->
 
+        {{-- datatable --}}
+        @stack('script')
+
+        {{-- end datatable --}}
         <!--end::Body-->
         <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"

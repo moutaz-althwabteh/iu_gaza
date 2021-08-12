@@ -98,25 +98,31 @@ class HomeController extends Controller
    {
 
     return  $rule=[
-        'name' => 'required|unique:posts|max:50',
-        'buildingnumber' => 'required|unique:posts',
-        'coordinate' => 'required|unique:posts',
-        'theowner' => 'required|unique:posts',
-        'commissioner' => 'required|unique:posts',
-        'commissioneridnum' => 'required|unique:posts',
-        'commissioneraddress'=>'required|unique:posts',
-        'partnumber' => 'required|unique:posts',
-        'landarea' => 'required|unique:posts',
-        'supervisingengineer' => 'required|unique:posts',
+        'name' => 'required',
+        'buildingnumber' => 'required',
+        'coordinate' => 'required',
+        'theowner' => 'required',
+        'commissioner' => 'required',
+        'commissioneridnum' => 'required',
+        'commissioneraddress'=>'required',
+        'partnumber' => 'required',
+        'landarea' => 'required',
+        'supervisingengineer' => 'required',
         'projecttype' => 'required',
         'projectstatus' => 'required',
         'startingdate' => 'required',
         'expirydate' => 'required',
-        'budget' => 'required|unique:posts',
+        'budget' => 'required',
         'currency' => 'required',
-        'notes' => 'required|unique:posts',
+        'notes' => 'required',
     ];
 
+   }
+
+   public function show()
+   {
+       $project=Project::get();
+       return view('Dashboard.show',compact('project'));
    }
 
 }
