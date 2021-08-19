@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <base href="">
+    <base href="http://127.0.0.1:8000/">
     <meta charset="utf-8" />
     <title>Metronic Live preview | Keenthemes</title>
     <meta name="description"
@@ -254,14 +254,14 @@
                                         </li>
                                         <li class="menu-item menu-item-submenu" aria-haspopup="true"
                                             data-menu-toggle="hover">
-                                            <a href="javascript:;" class="menu-link menu-toggle">
+                                            <a href="{{ route('data') }}" class="menu-link menu-toggle">
                                                 <i class="menu-bullet menu-bullet-line">
                                                     <span></span>
                                                 </i>
-                                                <span class="menu-text">Profile</span>
+                                                <span class="menu-text">Show Projects</span>
                                                 <i class="menu-arrow"></i>
                                             </a>
-                                            <div class="menu-submenu">
+                                            {{-- <div class="menu-submenu">
                                                 <i class="menu-arrow"></i>
                                                 <ul class="menu-subnav">
                                                     <li class="menu-item menu-item-submenu" aria-haspopup="true"
@@ -351,7 +351,7 @@
                                                         </a>
                                                     </li>
                                                 </ul>
-                                            </div>
+                                            </div> --}}
                                         </li>
                                         <li class="menu-item menu-item-submenu" aria-haspopup="true"
                                             data-menu-toggle="hover">
@@ -5448,6 +5448,7 @@
                             <!--begin::Dashboard-->
                             <!--begin::Row-->
                             @yield('create')
+                            @yield('update')
                             @yield('show')
 
                             <!--end::Row-->
@@ -7461,6 +7462,7 @@
 
         {{-- datatable --}}
         @stack('script')
+        
 
         {{-- end datatable --}}
         <!--end::Body-->
@@ -7498,7 +7500,7 @@
                     class="applyBtn btn btn-sm btn-primary" disabled="disabled" type="button">Apply</button> </div>
         </div>
 
-        <p>bader</p>
+        
 </body>
 
 </html>
