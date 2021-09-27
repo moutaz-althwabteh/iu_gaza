@@ -15,12 +15,11 @@ class dataController extends Controller
     public function index()
     {
         $data = Project::get();
-       
         if (request()->ajax()) {
             return datatables()->of($data)
                 ->addColumn('action', function ($data) {
-                    $button = " <a href='" . route('edit',$data->id) . "' class='btn btn-danger'> Edit</a>";
-                    $button .= " <a href='" . route('delete',$data->id) . "' class='btn btn-danger'> Delete</a>";
+                    $button = " <a href='" . route('project.edit',$data->id) . "' class='btn btn-danger'> Edit</a>";
+                    $button .= " <a href='" . route('project.destroy',$data->id) . "' class='btn btn-danger'> Delete</a>";
                     return $button;
                 })
                 ->rawColumns(['action'])
@@ -29,3 +28,7 @@ class dataController extends Controller
         return view('Dashboard.show');
     }
 }
+
+
+
+

@@ -9,24 +9,47 @@
 
 @section('show') 
 
-    <table class="table table-striped" id="tabel1">
-        <thead>
-            <tr>
-                <th>Project Name</th>
-                <th>building number</th>
-                <th>coordinates</th>
-                <th>the owner of real estate</th>
-                <th>action</th>
-                
+@if (session()->has('success'))
+<div class="alert alert-success">{{session()->get('success')}}</div>
+@endif
 
-            </tr>
-        </thead>
-        <tbody>
-         
-        </tbody>
+<div class="card">
+    <div class="card-header ui-sortable-handle" style="cursor: move;">
+      <h3 class="card-title">
+        <i class="fas fa-chart-pie mr-1"></i>
+        Projects
+      </h3>
+      <div class="card-tools" style="float: right ; margin-right: -.625rem;margin-top: -5%">
+        <ul class="nav nav-pills ml-auto" >
+          <li class="nav-item">
+            <a class="btn btn-light-primary font-weight-bold" href="{{ url('project/create') }}"  >
+                <i class="ki ki-plus icon-md mr-2"></i>Add </a>
+          </li>
+        </ul>
+      </div>
+    </div><!-- /.card-header -->
+    <div class="card-body">
+        
+        <table class="table table-striped" id="tabel1">
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>building number</th>
+                    <th>coordinates</th>
+                    <th>the owner of real estate</th>
+                    <th>action</th>                
+                </tr>
+            </thead>
+            <tbody>
+             
+            </tbody>
+    
+    
+        </table>
+    </div><!-- /.card-body -->
+  </div>
 
-
-    </table>
+    
 @endsection
 
 @push('script')
@@ -67,6 +90,8 @@
             });
 
         });
+
+        
 
        
     </script>

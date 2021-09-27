@@ -31,7 +31,7 @@ class CreateProjectTable extends Migration
             $table->text('ExpiryDate');
             $table->integer('BudgetBydays');
             $table->string('theCurrency');
-            $table->string('Notes');
+            $table->string('Notes',null);
             $table->timestamps();
 
 

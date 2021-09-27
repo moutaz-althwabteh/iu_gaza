@@ -2,9 +2,28 @@
 @section('update')
 
 
-<form action="{{ route('update',$project->id) }}" method="post">
+
+<div class="card">
+    <div class="card-header ui-sortable-handle" style="cursor: move;">
+      <h3 class="card-title">
+        <i class="fas fa-chart-pie mr-1"></i>
+        Update Project
+      </h3>
+      <div class="card-tools" style="float: right ; margin-right: -.625rem;margin-top: -5%">
+        <ul class="nav nav-pills ml-auto" >
+          <li class="nav-item">
+            {{-- <a class="nav-link active" href="{{ url('project/create') }}"  >Add </a> --}}
+          </li>
+        </ul>
+      </div>
+    </div><!-- /.card-header -->
+    <div class="card-body">
+       
+        
+<form action="{{ route('project.update',$project->id) }}" method="post">
 
     @csrf
+    @method('PATCH')
     {{-- @method('PATCH') --}}
     
     {{-- project name --}}
@@ -186,5 +205,11 @@
 
     <button type="submit" class="btn btn-primary">Update</button>
 </form>
+
+    </div><!-- /.card-body -->
+  </div>
+
+
+
     
 @endsection

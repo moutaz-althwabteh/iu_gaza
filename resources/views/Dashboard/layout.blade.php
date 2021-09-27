@@ -234,21 +234,21 @@
                                                         </a>
                                                     </li> --}}
                                                     <li class="menu-item" aria-haspopup="true">
-                                                        <a href="{{ route('create') }}" class="menu-link">
+                                                        <a href="{{ url('project/create') }}" class="menu-link">
                                                             <i class="menu-bullet menu-bullet-dot">
                                                                 <span></span>
                                                             </i>
                                                             <span class="menu-text">Add</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item" aria-haspopup="true">
+                                                    {{-- <li class="menu-item" aria-haspopup="true">
                                                         <a href="custom/apps/user/edit-user.html" class="menu-link">
                                                             <i class="menu-bullet menu-bullet-dot">
                                                                 <span></span>
                                                             </i>
                                                             <span class="menu-text">Edit User</span>
                                                         </a>
-                                                    </li>
+                                                    </li> --}}
                                                 </ul>
                                             </div>
                                         </li>
@@ -918,7 +918,10 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+
+                            {{-- page --}}
+
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Shopping/Barcode-read.svg-->
@@ -1385,13 +1388,14 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-section">
+                            </li> --}}
+
+                            {{-- <li class="menu-section">
                                 <h4 class="menu-text">Layout</h4>
                                 <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
-                            </li>
+                            </li> --}}
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="javascript:;" class="menu-link menu-toggle">
+                                {{-- <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Bucket.svg-->
                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -1413,8 +1417,8 @@
                                     </span>
                                     <span class="menu-text">Themes</span>
                                     <i class="menu-arrow"></i>
-                                </a>
-                                <div class="menu-submenu">
+                                </a> --}}
+                                {{-- <div class="menu-submenu">
                                     <i class="menu-arrow"></i>
                                     <ul class="menu-subnav">
                                         <li class="menu-item menu-item-parent" aria-haspopup="true">
@@ -1439,9 +1443,11 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> --}}
                             </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+
+                            {{-- the start --}}
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Code/Compiling.svg-->
@@ -1513,8 +1519,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- end --}}
+                            
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/General/Settings-1.svg-->
@@ -1594,8 +1603,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item" aria-haspopup="true">
+                            </li> --}}
+
+                            {{-- <li class="menu-item" aria-haspopup="true">
                                 <a target="_blank" href="https://preview.keenthemes.com/metronic/demo1/builder.html"
                                     class="menu-link">
                                     <span class="svg-icon menu-icon">
@@ -1617,11 +1627,13 @@
                                     </span>
                                     <span class="menu-text">Builder</span>
                                 </a>
-                            </li>
-                            <li class="menu-section">
+                            </li> --}}
+                            {{-- <li class="menu-section">
                                 <h4 class="menu-text">CRUD</h4>
                                 <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
-                            </li>
+                            </li> --}}
+{{-- 
+
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
@@ -2104,8 +2116,12 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+
+
+                            {{-- features --}}
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-left-panel-2.svg-->
@@ -2338,8 +2354,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-horizontal.svg-->
@@ -2657,8 +2674,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Files/Upload.svg-->
@@ -2714,11 +2732,16 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-section">
+                            </li> --}}
+
+
+
+                            {{-- <li class="menu-section">
                                 <h4 class="menu-text">Features</h4>
                                 <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
-                            </li>
+                            </li> --}}
+
+{{--                             
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
@@ -2839,8 +2862,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Files/Pictures1.svg-->
@@ -2987,7 +3011,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> --}}
+{{-- 
+                            
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
@@ -3076,7 +3102,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> --}}
+{{-- 
+
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
@@ -3189,8 +3217,10 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- end --}}
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/General/Attachment2.svg-->
@@ -3279,8 +3309,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Select.svg-->
@@ -3352,8 +3383,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
@@ -3449,8 +3481,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Book-open.svg-->
@@ -3506,8 +3539,12 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                            </li> --}}
+
+                            {{-- start --}}
+
+
+                            {{-- <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <span class="svg-icon menu-icon">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Mirror.svg-->
@@ -3635,8 +3672,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> --}}
                         </ul>
+
+                        {{-- end --}}
+
                         <!--end::Menu Nav-->
                         <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
                             <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
@@ -5447,6 +5487,11 @@
                         <div class="container">
                             <!--begin::Dashboard-->
                             <!--begin::Row-->
+
+                                {{-- good view  --}}
+                            {{-- end --}}
+
+
                             @yield('create')
                             @yield('update')
                             @yield('show')
